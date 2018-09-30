@@ -22,10 +22,10 @@ class BilletModele{
         $billet = new Billet($result['id'],$result['titre'],$result['billet'],$commentaires);
       }
 
-    //Permet d'obtenir tous les billets
-    public function obtenirTousLesBillets(){
+    //Permet d'obtenir les n derniers billets
+    public function obtenirLesBillets($pageCourante, $nbElementsParPages){
         $array = array();
-        $results = $this->database->query('SELECT * FROM billet ORDER BY id DESC');
+        $results = $this->database->query('SELECT * FROM billet ORDER BY id DESC LIMIT '.$pageCourante*$nbElementsParPages.', '.$nbElementsParPages);
         foreach($results as $result){
             $commentaires = $this->commentaireModele->obtenirCommentaireParBillet($result['id']);
             array_push($array, new Billet($result['id'],$result['titre'],$result['billet'],$commentaires));
@@ -33,15 +33,9 @@ class BilletModele{
         return $array;
     }
 
-    //Permet d'obtenir les n derniers billets
-    public function obtenirDerniersBillets($n){
-        $array = array();
-        $results = $this->database->query('SELECT * FROM billet ORDER BY id DESC LIMIT 0, '.$n);
-        foreach($results as $result){
-            $commentaires = $this->commentaireModele->obtenirCommentaireParBillet($result['id']);
-            array_push($array, new Billet($result['id'],$result['titre'],$result['billet'],$commentaires));
-        }
-        return $array;
+    public function compterBillets(){
+        $result = $this->database->query('SELECT count(*) FROM billet');
+        return $result[0];
     }
 
 }
