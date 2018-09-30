@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="Victoria IBER">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Blog pour Écrivain</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="../../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,14 +35,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">À propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sample Post</a>
+              <a class="nav-link" href="#">Billets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rechercher</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -59,7 +62,7 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>About Me</h1>
+              <h1>Rechercher</h1>
               <span class="subheading">This is what I do.</span>
             </div>
           </div>
@@ -69,13 +72,7 @@
 
     <!-- Main Content -->
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-        </div>
-      </div>
+      
     </div>
 
     <hr>
@@ -118,8 +115,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../assets/js/jquery/jquery.min.js"></script>
-    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="../../assets/js/clean-blog.min.js"></script>

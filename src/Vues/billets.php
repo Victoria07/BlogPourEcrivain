@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Blog pour Écrivain</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="../../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="../../asset/css/clean-blog.min.css" rel="stylesheet">
+    <link href="../../assets/css/clean-blog.min.css" rel="stylesheet">
 
   </head>
 
@@ -35,14 +35,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">À propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sample Post</a>
+              <a class="nav-link" href="#">Billets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rechercher</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -156,8 +159,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../assets/js/jquery/jquery.min.js"></script>
-    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="../../assets/js/clean-blog.min.js"></script>
